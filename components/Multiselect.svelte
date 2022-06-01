@@ -27,7 +27,6 @@
         options = [...options, {value: o.value, name: o.textContent}]
         
       });
-      console.log(23,options)
       //value && (selected = options.reduce((obj, op) => value.includes(op.value) ? {...obj, [op.value]: op} : obj, {}));
       first = false;
     }); */
