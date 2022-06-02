@@ -1,13 +1,43 @@
 <script>
   import logo from './assets/svelte.png'
   import Lamps from '../components/Lamps.svelte';
-  import Navbar from '../components/navbar/Navbar.svelte';
+  import { Router, Route, Link } from "svelte-navigator";
+  import Catalog from "../pages/Catalog.svelte";
+  import Navbarsimple from '../components/Navbarsimple.svelte';
  
 </script>
-<header>
-  <Navbar></Navbar>
-</header>
+<Navbarsimple></Navbarsimple>
 
+<!-- <Router>
+ 
+    <h1>History</h1>
+
+    <nav>
+      <Link to="/">Base</Link>
+      <Link to="home">Homee</Link>
+      <Link to="about">About</Link>
+      <Link to="blog">Blog</Link>
+    </nav>
+
+  <div>
+    <Route path="blog/*blogRoute" component={Catalog} />
+
+    <Route path="home">
+      <h3>Home</h3>
+      <p>Home sweet home...</p>
+    </Route>
+
+    <Route path="about">
+      <h3>About</h3>
+      <p>That's what it's all about!</p>
+    </Route>
+
+    <Route>
+      <h3>Default</h3>
+      <p>No Route could be matched.</p>
+    </Route>
+  </div>
+</Router> -->
 
 
 <!-- <p>
@@ -27,14 +57,14 @@
 	</div>
 {/if} -->
 
-<main>
+<!-- <main>
   <Lamps></Lamps>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello world!</h1>
 
 
 </main>
-
+ -->
 <style>
   :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -77,11 +107,6 @@
       max-width: none;
     } */
   }
-  header {
-    background-color: lightblue;
-    height: 50px;
-    padding: 0 15px;
-  }
-
+  
   
 </style>

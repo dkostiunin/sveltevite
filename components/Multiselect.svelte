@@ -1,5 +1,5 @@
 <script>
-    import { onMount } from 'svelte';
+    //import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
     export let id = '';
     export let value = [];
